@@ -101,8 +101,10 @@ return {
           on_attach = function(client, bufnr)
             vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
           end,
-          filetypes = { "h", "c", "cpp", "cc", "objc", "objcpp" },
-          cmd = { "clangd" },
+          filetypes = { "h", "c", "cpp", "cc", "cuda", "objc", "objcpp" },
+          cmd = {
+            "clangd",
+          },
           single_file_support = true,
           root_dir = lspconfig.util.root_pattern(
             ".clangd",
