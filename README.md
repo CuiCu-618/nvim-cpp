@@ -2,7 +2,7 @@
 
 ## Plugins
 
-- aplha
+- alpha
 - auto-session
 - autopairs
 - bufferline
